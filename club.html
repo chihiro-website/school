@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ファンクラブ | DreamLive オフィシャルサイト</title>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="icon" href="images/favicon.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body onLoad="showEvent()">
+<header>
+  <div class="header-left"> <a href="index.html"><img src="images/logo.png" alt="ロゴ画像" class="logo"></a> <a href="https://www.google.co.jp/" target="_blank"><img src="images/onlinestorelogo.png" alt="オンラインストアのマーク" class="cart"></a> </div>
+  <div class="header-right">
+    <nav>
+      <div id="menu-icon" class="menu-icon">
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="menu">
+          <li><a href="artist.html">アーティスト</a></li>
+          <li><a href="schedule.html">イベント情報</a></li>
+          <li><a href="club.html">ファンクラブ</a></li>
+          <li><a href="audition.html">オーディション</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+<!-----------------メイン-->
+	<div class="wrapper">
+		<main class="club-main">
+			<h2 class="align-center align-left club-title">DreamLive公式ファンクラブ</h2>
+			<article class="club-article">
+				<div class="btn-container">
+					<div class="align-center"><a href="#" class="btn login">ログイン</a></div>
+					<div class="align-center"><a href="#" class="btn regi">新規会員登録</a></div>
+				</div>
+				<div class="club-text">
+					<p>年会費一律5500円（税込み）</p>
+					<p>会員限定の超豪華イベントや、更新特典など多数あり！</p>
+				</div>
+			</article>
+			<section class="club-section">
+				<h2 class="align-center align-left">ファンクラブイベント例一覧</h2>
+				<div class="club-contents" id="club-contents"></div><!--javascriptで表示-->
+				<p class="comment"><br>その他ファンクラブ限定でのライブやグッズお渡し会など、人気イベント多数☆</p>
+			</section>
+			<div class="back"><a href="club.html">↑ページトップへ</a></div>
+		</main>
+	</div>
+<!-----------------メインここまで-->
+
+	
+	<footer>
+		
+		<p class="align-center">&copy;DreamLive.inc</p>
+	</footer>
+	<script src="js/navimenu.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	
+<script>
+	//イベント例一覧
+	function showEvent(){
+		let clubBox = '';
+		let text = ['ファンクラブ親睦会 On Cruise','手作り料理ふるまいオフ会','メンバーが運転する車でドライブデート','MV撮影参加＆見学会','誕生月は推しメンから壁紙プレゼント','もちろんチケット先行申し込みも'];
+		for (let i = 1; i <= 6; i++){
+			clubBox ='<div class="item"><img src="images/club' + i + '.jpg" alt="' + text[i-1] + '"><p>' + text[i-1] + '</p></div>';
+			document.getElementById('club-contents').insertAdjacentHTML('beforeend',clubBox);
+		}
+		
+	}
+
+	
+
+</script>
+
+</body>
+</html>

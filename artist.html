@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>アーティスト | DreamLive オフィシャルサイト</title>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" media="screen">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body onload="DefaultSave()">
+	
+<header>
+  <div class="header-left"> <a href="index.html"><img src="images/logo.png" alt="ロゴ画像" class="logo"></a> <a href="https://www.google.co.jp/" target="_blank"><img src="images/onlinestorelogo.png" alt="オンラインストアのマーク" class="cart"></a> </div>
+  <div class="header-right">
+    <nav>
+      <div id="menu-icon" class="menu-icon">
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="menu">
+          <li><a href="artist.html">アーティスト</a></li>
+          <li><a href="schedule.html">イベント情報</a></li>
+          <li><a href="club.html">ファンクラブ</a></li>
+          <li><a href="audition.html">オーディション</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-----------------メイン-->
+<div class="wrapper" id="artist-top">
+  <main class="artist-main">
+	  
+    <h2 class="align-center">アーティスト一覧 (50音順)</h2>
+    <div class="switch-button" id="switch-button">
+      <button onclick="showArtist('not-idol')">アイドル</button><div class="slash"></div>
+      <button onclick="showArtist('not-vtuber')">VTuber</button><div class="slash"></div>
+      <button onclick="showArtist('not-pre')">研究生</button><div class="slash"></div>
+      <button onclick="showAll()">すべて見る</button>
+    </div>
+    <article class="artist-article align-center" id="article"> 
+		
+		<a href="images/artist6.jpg" rel="artist" title="i☆Lis" class="not-vtuber not-pre">
+      	<p><img src="images/artist6.jpg" alt="i☆Lis"><br>
+        i☆Lis</p></a>
+		
+		<a href="images/artist7.jpg" rel="artist" title="角山 彩" class="not-idol not-pre">
+      	<p><img src="images/artist7.jpg" alt="角山 彩"><br>
+        角山 彩</p></a>
+		
+		<a href="images/artist4.jpg" rel="artist" title="鈴本愛理" class="not-vtuber not-pre">
+      	<p><img src="images/artist4.jpg" alt="鈴本愛理"><br>
+        鈴本愛理</p></a> 
+       
+		<a href="images/artist2.jpg" rel="artist" title="超どぎまぎ♡宣伝部" class="not-vtuber not-pre">
+      	<p><img src="images/artist2.jpg" alt="超どぎまぎ♡宣伝部"><br>
+        超どぎまぎ♡宣伝部</p></a> 
+		
+		<a href="images/artist8.jpg" rel="artist" title="D小町" class="not-idol not-pre">
+      	<p><img src="images/artist8.jpg" alt="D小町"><br>
+        D小町</p></a>
+		
+		<a href="images/artist3.jpg" rel="artist" title="てんぱ組.inc" class="not-vtuber not-pre">
+      	<p><img src="images/artist3.jpg" alt="てんぱ組.inc"><br>
+        てんぱ組.inc</p></a>
+		
+		<a href="images/artist12.jpg" rel="artist" title="DreamLive研究生" class="not-idol not-vtuber">
+      	<p><img src="images/artist12.jpg" alt="DreamLive研究生"><br>
+        DreamLive研究生</p></a> 
+		
+		<a href="images/artist1.jpg" rel="artist" title="西のコンキスタドール" class="not-vtuber not-pre">
+      	<p><img src="images/artist1.jpg" alt="西のコンキスタドール"><br>
+        西のコンキスタドール</p></a>
+      
+		<a href="images/artist10.jpg" rel="artist" title="西のコンキスタドール研究生" class="not-idol not-vtuber">
+      	<p><img src="images/artist10.jpg" alt="西のコンキスタドール研究生"><br>
+        西のコンキスタドール研究生</p></a>
+      
+		<a href="images/artist5.jpg" rel="artist" title="FRUITS 21PPER" class="not-vtuber not-pre">
+      	<p><img src="images/artist5.jpg" alt="FRUITS 21PPER"><br>
+        FRUITS 21PPER</p></a> 
+      
+		<a href="images/artist11.jpg" rel="artist" title="FRUITS 21PPER研究生" class="not-idol not-vtuber">
+      	<p><img src="images/artist11.jpg" alt="FRUITS 21PPER研究生"><br>
+        FRUITS 21PPER研究生</p></a>
+      
+		<a href="images/artist9.jpg" rel="artist" title="u's" class="not-idol not-pre">
+      	<p><img src="images/artist9.jpg" alt="u's"><br>
+        u's</p></a>
+      
+	  </article>
+    <div class="text">
+      <p>DreamLive研究生＆新規グループメンバーオーディション開催！<br>
+        詳しい情報、お申し込みは<a href="audition.html">こちら</a></p>
+    </div>
+	  
+    <div class="back"><a href="#artist-top">↑ページトップへ</a></div>
+	  
+  </main>
+</div>
+<!-----------------メインここまで-->
+
+<footer>
+  <p class="align-center">&copy;DreamLive.inc</p>
+</footer>
+	
+<script src="js/navimenu.js"></script>	
+	
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script> 
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+
+	<script type="text/javascript">
+		
+		let defaultHTML;
+		fancyBox();
+		
+		function DefaultSave() {
+		  defaultHTML = document.getElementById('article').innerHTML;
+		}
+
+		function showArtist(className) {
+		  html_reset();
+		  let idolBox = document.getElementsByClassName(className);
+		  let idolBoxLength = idolBox.length;
+		  for (let i = 0 ; i < idolBoxLength; i++) {
+			idolBox.item(0).remove();
+		  }
+		  fancyBox();
+		}
+
+		function showAll() {
+		  html_reset();
+		  fancyBox();
+		}
+
+		
+		
+		//ページをリセットにしてデフォルトにする
+		function html_reset() {
+		  document.getElementById('article').innerHTML = defaultHTML;
+		}
+		//ファンシーボックス
+		function fancyBox() {
+		  $(function(){
+				$('a[rel=artist]').fancybox({
+						'titlePosition'	: 'over',
+						'transitionIn'	: 'elastic',
+						'transitionOut'	: 'elastic',
+				});
+			});
+		}
+
+  </script>
+</body>
+</html>
